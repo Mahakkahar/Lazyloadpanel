@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  font-family:  Arial, Helvetica, sans-serif;
+  background: #f4f4f9;
+  font-size: larger;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+#sec-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #e8eaf6;
+  padding: 20px;
+  font-display: #2889ea;
+}
+
+.section-lazy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.section-lazy > div {
+  width: 50%;
+  padding: 20px 35px;
+  font-weight: 200;
+  background-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: justify;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-lazy > div:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(211, 196, 196, 0.8);
+  transition: filter 0.5s;
+}
+
+.lazy-img {
+  filter: blur(10px);
+  transition: filter 1s;
+}
+
+.lazy-img-loaded {
+  filter: blur(0);
+}
+
+footer {
+  background-color: #233136;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e74c3c;
+}
+
+@media screen and (max-width: 768px) {
+  #sec-header {
+    font-size: 2.5rem;
+  }
+  
+  .section-lazy > div {
+    width: 90%;
+  }
+
+  .navigation li {
+    font-size: 1.1rem;
+  }
+}
